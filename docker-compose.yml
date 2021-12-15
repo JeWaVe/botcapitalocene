@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  botcapitalocene:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - CONSUMER_KEY=${CONSUMER_KEY}
+      - CONSUMER_SECRET=${CONSUMER_SECRET}
+      - ACCESS_KEY=${ACCESS_KEY}
+      - ACCESS_SECRET=${ACCESS_SECRET}
