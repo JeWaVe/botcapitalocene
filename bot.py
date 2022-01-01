@@ -39,7 +39,7 @@ def should_reply(tweet):
         return False
 
     text = tweet.text.lower()
-    if 'capitalocene' in text or 'capitalocène' in text or 'miss' in text:
+    if 'capitalocene' in text or 'capitalocène' in text or 'miss' in text or 'reviewed' in text:
         return False
     # do not reply to music album "miss anthropocene"
     if 'miss' in text:
